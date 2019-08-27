@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*  gửi vào  ngân hàng số tiền là a đồng, với lãi xuất hàng tháng là r% trong n tháng, cả vốn lẫn lãi T sau n tháng là Tn= a* pow((1+r),n)    */
+    let sotiengui = parseFloat(prompt("nhập số tiền bạn gửi ban đầu : "));
+    let sothanggui = parseFloat(prompt("nhập số tháng bạn gửi : "));
+    let laixuathangthang = parseFloat(prompt("nhập lãi xuất hàng tháng của ngân hàng:  "));
+    let Tongtien= sotiengui * (Math.pow((1+ laixuathangthang),sothanggui));
+    alert("tổng tiền gốc và lãi bạn nhân được sau "+sothanggui + "tháng với lãi xuất "+ laixuathangthang +" là: "+ Tongtien);
+
+</script>
+</body>
+</html>
